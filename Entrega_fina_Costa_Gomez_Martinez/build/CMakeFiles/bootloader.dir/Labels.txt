@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+C:/Users/usuario/Desktop/Sistemas_Embebidos_2024/Proyecto/Entrega/Entrega_fina_Costa_Gomez_Martinez/build/CMakeFiles/bootloader
+C:/Users/usuario/Desktop/Sistemas_Embebidos_2024/Proyecto/Entrega/Entrega_fina_Costa_Gomez_Martinez/build/CMakeFiles/bootloader.rule
+C:/Users/usuario/Desktop/Sistemas_Embebidos_2024/Proyecto/Entrega/Entrega_fina_Costa_Gomez_Martinez/build/CMakeFiles/bootloader-complete.rule
+C:/Users/usuario/Desktop/Sistemas_Embebidos_2024/Proyecto/Entrega/Entrega_fina_Costa_Gomez_Martinez/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+C:/Users/usuario/Desktop/Sistemas_Embebidos_2024/Proyecto/Entrega/Entrega_fina_Costa_Gomez_Martinez/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+C:/Users/usuario/Desktop/Sistemas_Embebidos_2024/Proyecto/Entrega/Entrega_fina_Costa_Gomez_Martinez/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+C:/Users/usuario/Desktop/Sistemas_Embebidos_2024/Proyecto/Entrega/Entrega_fina_Costa_Gomez_Martinez/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+C:/Users/usuario/Desktop/Sistemas_Embebidos_2024/Proyecto/Entrega/Entrega_fina_Costa_Gomez_Martinez/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+C:/Users/usuario/Desktop/Sistemas_Embebidos_2024/Proyecto/Entrega/Entrega_fina_Costa_Gomez_Martinez/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+C:/Users/usuario/Desktop/Sistemas_Embebidos_2024/Proyecto/Entrega/Entrega_fina_Costa_Gomez_Martinez/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de Música - Modo AP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        #controls {
+            margin: 20px 0;
+        }
+        button {
+            padding: 10px 15px;
+            margin: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: white;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        input[type="file"] {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Reproductor de Música - Modo AP</h1>
+
+    <div id="controls">
+        <button onclick="sendMqttCommand('play')">Play</button>
+        <button onclick="sendMqttCommand('pause')">Pause</button>
+        <input type="file" id="fileInput" onchange="uploadFile()">
+        <button onclick="loadStaConfig()">Cargar Configuración STA</button>
+    </div>
+
+    <script>
+        function sendMqttCommand(command) {
+            fetch('/command', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ command: command })
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+        }
+
+        function uploadFile() {
+            const fileInput = document.getElementById('fileInput');
+            const file = fileInput.files[0];
+            const formData = new FormData();
+            formData.append('file', file);
+
+            fetch('/upload', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.text())
+            .then(data => {
+                console.log('File upload success:', data);
+            })
+            .catch((error) => {
+                console.error('File upload error:', error);
+            });
+        }
+
+        function loadStaConfig() {
+            // Implementar la lógica para cargar la configuración STA
+            alert("Cargar Configuración STA no está implementado aún.");
+        }
+    </script>
+</body>
+</html>
